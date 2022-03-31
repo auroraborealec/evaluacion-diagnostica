@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Evaluación diagnóstica de Introducción al Desarrollo Front End con HTML, CSS y JavaScript" />
+        <meta name="keywords" content="HTML, CSS, JavaScript" />
+        <meta name="author" content="Alejandro Chávez" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="style.css" rel="stylesheet" />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"
+            integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <title>Elementos básicos del diseño</title>
+    </head>
+    <body>
+        <div id="uno"><strong><a href="index.html">PORTADA</a></strong></div>
+        <div id="otro"><a href="page_1.html">01</a> / <a href="page_2.html">02</a> / <a href="page_3.html">03</a></div>
+        <div>
+<br>
+          <h1 style="text-align:center;">Elementos básicos del diseño </h1>
+          <p style="text-align:center;">La composición es una característica propia de cada creación artística, esta composición es el resultado de un conjunto de elementos que ayudan a concebir y organizar comunicaciones visuales u obras gráficas.</p>
+<p style="text-align:center;">Dentro de los elementos compositivos podemos encontrar el punto, la línea, el plano, la textura, color, ritmo y equilibrio.</p>
+<p style="text-align:center;">Mediante animaciones veremos ejemplos de estos elementos para explicar su función.</p>
+        <script>
+            function setup() {
+                createCanvas(windowWidth - 50, windowHeight - 50)
+                    .position(25, 30)
+                    .style("z-index", -1);
+            }
+            function draw() {
+              colorMode(RGB);
+                background(121,205,205);
+                textSize(100); text("🖋",mouseX,mouseY);
+            }
+            function windowResized() {
+                resizeCanvas(windowWidth - 50, windowHeight - 50);
+            }
+        </script>
+    </body>
+</html>
